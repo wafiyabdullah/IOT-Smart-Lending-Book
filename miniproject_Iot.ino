@@ -20,8 +20,8 @@ float duration_us, distance_cm;
 MFRC522 mfrc522(SS_PIN, RST_PIN); // Create MFRC522 instance.
 //************************************************************************
 
-const char *ssid = "EmpireRental@Unifi-5G";
-const char *password = "9Jahanam";
+const char *ssid = "wifi ssid";
+const char *password = "wifi password";
 const char *device_token = "rfidsensor";
 
 //************************************************************************
@@ -30,7 +30,7 @@ int time_dst = 0;
 String getData, Link;
 String OldCardID = "";
 unsigned long previousMillis2 = 0;
-String URL = "http://192.168.0.105/lendingbooksystem/getdata.php"; 
+String URL = "http://ip address/lendingbooksystem/getdata.php"; 
 
 bool rfidProcessed = false;
 unsigned long rfidResetTime = 0;
